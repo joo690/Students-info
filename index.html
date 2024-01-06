@@ -1,0 +1,322 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Students info</title>
+    <link rel="stylesheet" href="./assets/css/all.min.css" />
+    <link rel="stylesheet" href="./assets/css/bootstrap.min.css" />
+    <link rel="stylesheet" href="./assets/css/main.css" />
+  </head>
+  <body>
+    <div class="container">
+      <main class="bg-dark text-light mt-5 p-4">
+        <div class="row">
+          <div class="col-md-4 col-sm-12">
+            <label for="name" class="d-block">Student's name</label>
+            <input
+              class="w-100 rounded bg-white info"
+              type="text"
+              placeholder="Enter your name"
+            />
+          </div>
+          <div class="col-md-4 col-sm-12">
+            <label for="email" class="d-block">Student's email</label>
+            <input
+              class="w-100 rounded bg-white info"
+              type="text"
+              placeholder="Enter your email"
+            />
+          </div>
+          <div class="col-md-4 col-sm-12">
+            <label for="id" class="d-block">Student's id</label>
+            <input
+              class="w-100 rounded bg-white info"
+              type="text"
+              placeholder="Enter your id"
+            />
+          </div>
+        </div>
+        <div class="row">
+          <div class="col-md-4 col-sm-12">
+            <label for="imageUrl" class="d-block">Student's imageUrl</label>
+            <input
+              class="w-100 rounded bg-white info"
+              type="text"
+              placeholder="Enter your name"
+            />
+          </div>
+          <div class="col-md-4 col-sm-12">
+            <select
+              class="form-select mt-3 select"
+              aria-label="Default select example"
+            >
+              <option selected>Select your gender</option>
+              <option value="male">male</option>
+              <option value="female">female</option>
+            </select>
+          </div>
+          <div class="col-md-4 col-sm-12">
+            <select
+              class="form-select mt-3 select"
+              aria-label="Default select example"
+            >
+              <option selected>Select your year</option>
+              <option value="1">1</option>
+              <option value="2">2</option>
+              <option value="3">3</option>
+            </select>
+          </div>
+        </div>
+        <h1 class="text-center mt-4 mb-4">Select subjects</h1>
+        <h3 class="text-center mb-3">FIRST TERM</h3>
+        <div class="row mb-4">
+          <div class="col-md-3 col-sm-12">
+            <label for="subject1" class="d-block">Subject</label>
+            <input
+              type="text"
+              class="w-100 rounded bg-white fTerm"
+              placeholder="Enter a subject"
+            />
+          </div>
+          <div class="col-md-3 col-sm-12">
+            <label for="subject1" class="d-block">Subject</label>
+            <input
+              type="text"
+              class="w-100 rounded bg-white fTerm"
+              placeholder="Enter a subject"
+            />
+          </div>
+          <div class="col-md-3 col-sm-12">
+            <label for="subject1" class="d-block">Subject</label>
+            <input
+              type="text"
+              class="w-100 rounded bg-white fTerm"
+              placeholder="Enter a subject"
+            />
+          </div>
+          <div class="col-md-3 col-sm-12">
+            <label for="subject1" class="d-block">Subject</label>
+            <input
+              type="text"
+              class="w-100 rounded bg-white fTerm"
+              placeholder="Enter a subject"
+            />
+          </div>
+        </div>
+        <h3 class="text-center mb-3">SECOND TERM</h3>
+        <div class="row mb-4">
+          <div class="col-md-3 col-sm-12">
+            <label for="subject1" class="d-block">Subject</label>
+            <input
+              type="text"
+              class="w-100 rounded bg-white sTerm"
+              placeholder="Enter a subject"
+            />
+          </div>
+          <div class="col-md-3 col-sm-12">
+            <label for="subject1" class="d-block">Subject</label>
+            <input
+              type="text"
+              class="w-100 rounded bg-white sTerm"
+              placeholder="Enter a subject"
+            />
+          </div>
+          <div class="col-md-3 col-sm-12">
+            <label for="subject1" class="d-block">Subject</label>
+            <input
+              type="text"
+              class="w-100 rounded bg-white sTerm"
+              placeholder="Enter a subject"
+            />
+          </div>
+          <div class="col-md-3 col-sm-12">
+            <label for="subject1" class="d-block">Subject</label>
+            <input
+              type="text"
+              class="w-100 rounded bg-white sTerm"
+              placeholder="Enter a subject"
+            />
+          </div>
+        </div>
+        <div class="submit text-center">
+          <button
+            class="btn btn-outline-primary"
+            id="Update-btn"
+            onclick="createStudent()"
+          >
+            Submit
+          </button>
+        </div>
+      </main>
+      <div class="show">
+        <div class="row mt-5 bg-danger p-4 align-items-center student-card">
+          <div class="col-sm-12 col-md-5 col-lg-6 h-100 image-caption">
+            <img
+              src="https://i.pinimg.com/originals/a1/86/d3/a186d309e3ba2b2de198c59a33ec30ad.jpg"
+              class="img-fluid border rounded mb-3"
+              style="height: 40%"
+              alt=""
+            />
+            <p>Name : ahoho</p>
+            <p>ID : 10001</p>
+            <p>Year : 3</p>
+          </div>
+          <div class="col-sm-12 col-md-5 col-lg-6 h-100 tables">
+            <table
+              class="table table-dark table-hover text-center border-success rounded h-100"
+            >
+              <tr>
+                <th colspan="8">First Term</th>
+              </tr>
+              <tr>
+                <th colspan="2" class="border">first subject</th>
+                <th colspan="2" class="border">second subject</th>
+                <th colspan="2" class="border">third subject</th>
+                <th colspan="2" class="border">fourth subject</th>
+              </tr>
+              <tr>
+                <th colspan="2" class="border">OOP</th>
+                <th colspan="2" class="border">DATA STRUCTURE</th>
+                <th colspan="2" class="border">ALGORITHMS</th>
+                <th colspan="2" class="border">C++</th>
+              </tr>
+            </table>
+            <table
+              class="table table-dark table-hover text-center border-success rounded h-50"
+            >
+              <tr>
+                <th colspan="8">Second Term</th>
+              </tr>
+              <tr>
+                <th colspan="2" class="border">first subject</th>
+                <th colspan="2" class="border">second subject</th>
+                <th colspan="2" class="border">third subject</th>
+                <th colspan="2" class="border">fourth subject</th>
+              </tr>
+              <tr>
+                <th colspan="2" class="border">OOP</th>
+                <th colspan="2" class="border">DATA STRUCTURE</th>
+                <th colspan="2" class="border">ALGORITHMS</th>
+                <th colspan="2" class="border">C++</th>
+              </tr>
+            </table>
+          </div>
+        </div>
+
+        <div class="row mt-4">
+          <div class="col-6">
+            <button type="button" class="button ms-auto Edit-button">
+              <span class="button__text">Edit</span>
+              <span class="button__icon"
+                ><svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  width="24"
+                  viewBox="0 0 24 24"
+                  stroke-width="2"
+                  stroke-linejoin="round"
+                  stroke-linecap="round"
+                  stroke="currentColor"
+                  height="24"
+                  fill="none"
+                  class="svg"
+                >
+                  <line y2="19" y1="5" x2="12" x1="12"></line>
+                  <line y2="12" y1="12" x2="19" x1="5"></line></svg
+              ></span>
+            </button>
+          </div>
+          <div class="col-6">
+            <button class="button me-auto Delete-button" type="button">
+              <span class="button__text">Delete</span>
+              <span class="button__icon"
+                ><svg
+                  class="svg"
+                  height="512"
+                  viewBox="0 0 512 512"
+                  width="512"
+                  xmlns="http://www.w3.org/2000/svg"
+                >
+                  <title></title>
+                  <path
+                    d="M112,112l20,320c.95,18.49,14.4,32,32,32H348c17.67,0,30.87-13.51,32-32l20-320"
+                    style="
+                      fill: none;
+                      stroke: #fff;
+                      stroke-linecap: round;
+                      stroke-linejoin: round;
+                      stroke-width: 32px;
+                    "
+                  ></path>
+                  <line
+                    style="
+                      stroke: #fff;
+                      stroke-linecap: round;
+                      stroke-miterlimit: 10;
+                      stroke-width: 32px;
+                    "
+                    x1="80"
+                    x2="432"
+                    y1="112"
+                    y2="112"
+                  ></line>
+                  <path
+                    d="M192,112V72h0a23.93,23.93,0,0,1,24-24h80a23.93,23.93,0,0,1,24,24h0v40"
+                    style="
+                      fill: none;
+                      stroke: #fff;
+                      stroke-linecap: round;
+                      stroke-linejoin: round;
+                      stroke-width: 32px;
+                    "
+                  ></path>
+                  <line
+                    style="
+                      fill: none;
+                      stroke: #fff;
+                      stroke-linecap: round;
+                      stroke-linejoin: round;
+                      stroke-width: 32px;
+                    "
+                    x1="256"
+                    x2="256"
+                    y1="176"
+                    y2="400"
+                  ></line>
+                  <line
+                    style="
+                      fill: none;
+                      stroke: #fff;
+                      stroke-linecap: round;
+                      stroke-linejoin: round;
+                      stroke-width: 32px;
+                    "
+                    x1="184"
+                    x2="192"
+                    y1="176"
+                    y2="400"
+                  ></line>
+                  <line
+                    style="
+                      fill: none;
+                      stroke: #fff;
+                      stroke-linecap: round;
+                      stroke-linejoin: round;
+                      stroke-width: 32px;
+                    "
+                    x1="328"
+                    x2="320"
+                    y1="176"
+                    y2="400"
+                  ></line></svg
+              ></span>
+            </button>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <script src="./assets/JS/bootstrap.min.js"></script>
+    <script src="./assets/JS/main.js"></script>
+  </body>
+</html>
