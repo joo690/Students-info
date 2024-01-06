@@ -63,7 +63,7 @@ function printStudent() {
   studentsArr.forEach((element, index) => {
     showStudent.innerHTML += `
         <div class="row mt-5 bg-danger p-4 align-items-center student-card">
-        <div class="col-sm-12 col-md-5 col-lg-6 h-100 image-caption">
+        <div class="col-sm-12 col-lg-6 h-100 image-caption">
         <img
         src="${element.imageURL}"
             class="img-fluid border rounded mb-3"
@@ -74,7 +74,7 @@ function printStudent() {
             <p>ID : ${element.Id}</p>
             <p>Year : ${element.Year}</p>
             </div>
-            <div class="col-sm-12 col-md-5 col-lg-6 h-100 tables">
+            <div class="col-sm-12 col-lg-6 h-100 tables">
             <table
             class="table table-dark table-hover text-center border-success rounded h-100"
             >
